@@ -1,0 +1,65 @@
+@font-face{
+    font-family: "vcrOsd";
+    src: url('VCR_OSD.ttf');
+}
+
+body {
+    background-image: url('images/background.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+  }
+
+#fill-row{
+    height:100%;
+}
+
+#max-width{
+    width:100%;
+}
+
+#max-height{
+    height:100%;
+}
+
+#lost-planet-logo{
+    width:10%;
+}
+
+#video-thumbnail{
+    
+}
+
+#vhs-icon{
+    height:85px;
+}
+
+p{
+    font-size: 150%;
+    font-weight: 900;
+}
+
+#title{
+    font-family: "vcrOsd";
+    background: linear-gradient(#6b6c6e,#262626);
+}
+
+#model{
+    border-color: silver;
+}
+
+#timestamp{
+    font-size: 20px;
+    font-weight: 0;
+    float: right;
+}
+
+#author{
+    font-size: 25px;
+}
+
+#content{
+    font-size: 20px;
+}
+

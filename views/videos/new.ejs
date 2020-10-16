@@ -1,0 +1,31 @@
+<%- include("../partials/header.ejs"); %>
+
+<div class="aesthetic-windows-xp-modal-title-bar-text">
+    <h4 class="my-0">New Video</h4>
+</div>
+  
+</div>
+
+<div class="container">
+    <form action="/videos" method="POST">
+        <h3>Title</h3>
+        <input name="title" class="aesthetic-windows-xp-text-input" type="text" value="c:\aesthetic\src" />
+    
+        <h3>Desc</h3>
+        <textarea name="desc" class="aesthetic-windows-xp-text-input"></textarea>  
+        <div>
+            <h4>Video filename (do not include extention. Already looks for mp4 and webm)</h4>
+            <input name ="path" class="aesthetic-windows-xp-text-input" type="text" value="c:\aesthetic\src" placeholder="path"/>
+        </div>
+        <h4>Thumbnail filename. DO INCLUDE Extension</h4>
+        <input name ="thumbnail_path" class="aesthetic-windows-xp-text-input" type="text" value="c:\aesthetic\src" placeholder="path to thumbnail"/>
+
+        <h4>Admin Password</h4>
+        <input name ="password" class="aesthetic-windows-xp-text-input" type="password" value="c:\aesthetic\src" placeholder="password"/>
+
+        <button class="aesthetic-windows-xp-button" type="submit">Submit!</button>
+    </form>
+    
+</div>
+
+<%- include("../partials/footer.ejs"); %>

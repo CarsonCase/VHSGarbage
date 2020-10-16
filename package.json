@@ -1,0 +1,29 @@
+{
+  "name": "vhsgarbage",
+  "version": "1.0.0",
+  "description": "A website a friend wanted me to make for him",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarsonCase/VHSGarbage.git"
+  },
+  "author": "Carson Case",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarsonCase/VHSGarbage/issues"
+  },
+  "homepage": "https://github.com/CarsonCase/VHSGarbage#readme",
+  "dependencies": {
+    "aesthetic-css": "^1.0.1",
+    "alert": "^5.0.5",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.2",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7"
+  }
+}

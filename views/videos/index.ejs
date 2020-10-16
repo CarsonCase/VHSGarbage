@@ -1,0 +1,38 @@
+<%- include("../partials/header.ejs"); %>
+
+<div class="aesthetic-windows-xp-modal-title-bar-text">
+    <h4 class="my-0">Videos</h4>
+</div>
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <!-- FOR EACH VIDEO-->
+        <% videos.forEach((video)=>{ %>
+        <div class="col-md-4 p-3">
+            <div id="max-height" class="card">
+                <img class="card-img-top" id="video-thumbnail" src="/<%=video.thumbnail_path%>" alt="">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3><%=video.title%></h3>
+                    </div>
+                    
+                    <div>
+                        <div class="card-text">
+                            <p><%=video.desc%></p>
+                            <p id="timestamp"><%=video.upload_date %></p>
+                            <form action="<%=video._id%>">
+                                <button>Watch Me!</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--FOR EACH ENDS-->
+        <% }); %>
+    </div>
+</div>
+<%- include("../partials/footer.ejs"); %>

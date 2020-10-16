@@ -1,0 +1,83 @@
+<%- include("../partials/header.ejs"); %>
+
+<div class="aesthetic-windows-xp-modal-title-bar-text">
+  <h4 class="my-0"><%= video.title %></h4>
+</div>
+
+</div>
+
+<div class="d-flex align-items-center flex-column my-4">
+      <div class="card">
+        <video class = "card-img-top" width="1000" height="750" controls>
+          <source src="/<%= video.path %>.mp4" type="video/mp4">
+          <source src="/<%= video.path %>.webm" type="video/webm">
+          your browswer does not support the file format :(
+      </video>
+        <div class="card-body">
+          <div class="card-text">
+            <p> <%= video.desc %> </p>
+            <br>
+            <a download href="/<%= video.path %>.mp4">Download mp4</a>
+          </div>
+        </div>  
+    </div>
+  
+
+</div>
+
+
+<div class="aesthetic-windows-xp-modal">
+
+    <!-- Title Bar -->
+    <div class="aesthetic-windows-xp-modal-title-bar">
+  
+      <div class="aesthetic-windows-xp-modal-title-bar-text">
+        Comments
+      </div>
+  
+      <div class="aesthetic-windows-xp-modal-title-bar-controls">
+        <div class="aesthetic-windows-xp-button-title-bar">
+          <button></button>
+        </div>
+        <div class="aesthetic-windows-xp-button-title-bar-close">
+          <button></button>
+        </div>
+      </div>
+  
+    </div>
+  
+  
+    <!-- Content -->
+    <!-- Could be a tabbed container, or a set of dropdowns, etc... -->
+    <div class="aesthetic-windows-xp-modal-content">
+
+    <!--FOR EACH BEGIN-->
+    
+    <% for(let i=video.comments.length; i>0; i--){ %>
+    <strong><%= video.comments[i-1].author %></strong>
+    <p id="timestamp" class="float-right"><%= video.comments[i-1].timestamp %></p>
+    <p><%= video.comments[i-1].content %></p>
+    <hr>
+    <% };%>
+    <!--FOR EACH END-->
+    
+    <h3>Comment</h3>
+    <form action="/videos/<%=video._id%>" method="POST">
+        <div>
+          <input name = "user" class="aesthetic-windows-xp-text-input" type="text" placeholder="Your Name" />
+        </div>
+        <div class="margin-top">
+          <textarea name = "content" class="aesthetic-windows-xp-text-input" placeholder="Your Comment"></textarea>
+        </div>
+
+        <button type="submit">Post!</button>
+    </form>
+  
+    </div>
+  </div>
+
+
+
+
+
+<%- include("../partials/footer.ejs"); %>
