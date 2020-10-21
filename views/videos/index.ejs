@@ -13,7 +13,7 @@
         <div class="col-md-4 p-3">
             <div id="max-height" class="card">
                 <img class="card-img-top" id="video-thumbnail" src="/<%=video.thumbnail_path%>" alt="">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <div class="card-title">
                         <h3><%=video.title%></h3>
                     </div>
@@ -21,11 +21,13 @@
                     <div>
                         <div class="card-text">
                             <p><%=video.desc%></p>
-                            <p id="timestamp"><%=video.upload_date %></p>
-                            <form action="<%=video._id%>">
-                                <button>Watch Me!</button>
-                            </form>
                         </div>
+                    </div>
+                    <div class="mt-auto text-align-bottom">
+                        <p id="timestamp"><%=video.upload_date %></p>
+                        <form class = "" action="<%=video._id%>">
+                            <button class="aesthetic-windows-95-button">Watch Me!</button>
+                        </form>   
                     </div>
 
                 </div>

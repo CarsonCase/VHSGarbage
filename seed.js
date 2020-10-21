@@ -4,32 +4,11 @@ var mongoose = require("mongoose"),
 
 var data = [
     {
-        title: "Cliff",
+        title: "",
         upload_date: tools.timeStamp(),
-        desc: "lorem",
-        path: "videos/cliff",
-        thumbnail_path: "videos/thumbnails/cliff.gif"
-    },
-    {
-        title: "fathers",
-        upload_date: tools.timeStamp(),
-        desc: "lorem",
-        path: "videos/fathers",
-        thumbnail_path: "videos/thumbnails/fathers.gif"
-    },
-    {
-        title: "Gnet",
-        upload_date: tools.timeStamp(),
-        desc: "lorem",
-        path: "videos/gnet",
-        thumbnail_path: "videos/thumbnails/gnet.gif"
-    },
-    {
-        title: "goodnight",
-        upload_date: tools.timeStamp(),
-        desc: "lorem",
-        path: "videos/goodnight",
-        thumbnail_path: "videos/thumbnails/goodnight.gif"
+        desc: "",
+        path: "",
+        thumbnail_path: ""
     }
 ];
 

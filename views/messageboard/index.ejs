@@ -1,21 +1,25 @@
 <%- include("../partials/header.ejs"); %>
 
-<div class="aesthetic-windows-xp-modal-title-bar-text">
-  <h4 class="my-0">Messageboard</h4>
+<div class="container">
+  <div id="model" class="aesthetic-windows-xp-modal-title-bar-text">
+    <h4 class="my-0">Messageboard</h4>
+  </div>
+  
 </div>
 
 </div>
 
-  
-  
-    <!-- Content -->
-    <!-- Could be a tabbed container, or a set of dropdowns, etc... -->
-    <div class="aesthetic-windows-xp-modal-content">
+  <div class="container">
+    <div class="card">
+      <!-- Content -->
+  <!-- Could be a tabbed container, or a set of dropdowns, etc... -->
+
+  <div class="aesthetic-windows-xp-modal-content">
 
     <!--FOR EACH BEGIN-->
     <% for(let i=messages.length-1; i>0; i--){ %>
 
-    <strong id="author"><%=messages[i].author%></strong>
+    <strong id="author"><%=messages[i].author%>:</strong>
     <p id="timestamp"><%= messages[i].timestamp %></p>
     <p id="content"><%= messages[i].content %></p>
     <hr>
@@ -34,6 +38,10 @@
 
         <button type="submit">Post</button>
     </form>
+
+  </div>
+  
+  </div>
 
   
   </div>

@@ -573,7 +573,7 @@
   color: #000;
   background-color: #BFBFBF;
   text-align: center;
-  width: 75px;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1188,7 +1188,6 @@
   padding-right: 10px; }
 
 .aesthetic-windows-xp-modal {
-  background: #ece9d6;
   border: 3px solid;
   border-color: #044cdc;
   border-top-color: #298cfe;
@@ -1218,7 +1217,6 @@
         margin-left: 2px;
         margin-right: 2px; }
   .aesthetic-windows-xp-modal .aesthetic-windows-xp-modal-content {
-    background: #ece9d6;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
