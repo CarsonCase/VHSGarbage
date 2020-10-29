@@ -71,6 +71,14 @@ p{
     max-height: 40px;
 }
 
+#navbar-btns-mbl{
+    max-height: 20px;
+}
+
+#welcome-mbl{
+    max-width: 90%;
+}
+
 #video-player{
     max-width: 1000px;
 }

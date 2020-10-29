@@ -42,7 +42,7 @@
   
   <% for(let i=video.comments.length; i>0; i--){ %>
   <strong id="author"><%= video.comments[i-1].author %></strong>
-  <p id="timestamp"><%= video.comments[i-1].timestamp %></p>
+  <p class ="d-sm-none d-md-block"id="timestamp"><%= video.comments[i-1].timestamp %></p>
   <p id="content"><%= video.comments[i-1].content %></p>
   <hr>
   <% };%>
