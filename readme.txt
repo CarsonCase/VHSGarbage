@@ -16,3 +16,5 @@ Run genHttpKeys.sh in a linux terminal with ./
 
 Set Server Port:
 Change the PORT variable in app.js (on line 34)
+
+There are some HTTPS keys in the branch history. Not using them anymore. So don't try anything
