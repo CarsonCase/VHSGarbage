@@ -9,7 +9,8 @@
 <div class="container">
     <div class="row">
         <!-- FOR EACH VIDEO-->
-        <% videos.forEach((video)=>{ %>
+        <!-- Changed videos to reverse since Neel wants newest first-->
+        <% videos.slice().reverse().forEach((video)=>{ %>
         <div class="col-md-4 p-3">
             <div id="max-height" class="card">
                 <img class="card-img-top" id="video-thumbnail" src="/<%=video.thumbnail_path%>" alt="">

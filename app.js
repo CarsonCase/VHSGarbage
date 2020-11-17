@@ -45,7 +45,7 @@ var fs = require('fs');
 var https = require('https');
 
 
-//seed DB
+//-------SEED DB. Uncomment on launch if you have configured seed. Then comment out again unless you want to lose all your data each time you start server. If unconfigured just leave as is
 //seed();
 
 /*************************************************************
@@ -192,10 +192,15 @@ app.post("/videos",(req,res)=>{
 
 
 //Start server
-https.createServer({
+//Changed to not include https. Since Neel requested
+//Remove the comments bellow ("*/", "*/", and "//"" in order to return server to https)
+
+/*https.createServer({
     key: fs.readFileSync('server.key'),
     cert: fs.readFileSync('server.cert')
-  }, app)
-  .listen(PORT, function () {
+  }, 
+  */
+ app                                     //)
+.listen(PORT, function () {
     console.log('Vhs Garbage Server Running on Port: '+PORT);
   });
